@@ -1,0 +1,7 @@
+#slate {
+    border: 20px solid skyblue;
+    border-radius: 10px;
+    width: 640px;
+    height: 640px;
+    display: grid;
+}
