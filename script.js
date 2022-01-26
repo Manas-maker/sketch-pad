@@ -2,8 +2,7 @@ const INITIAL_DIMENSION = 16;
 const slate = document.querySelector('#slate');
 // const clearBtn = document.querySelector('#clear');
 drawGrid(INITIAL_DIMENSION);
-let pixels = document.querySelectorAll('div.pixel');
-pixels.forEach((pixel) => pixel.addEventListener('mouseenter',() => colorNew(pixel)));
+
 // clearBtn.addEventListener('click', clearGrid);
 
 
@@ -17,6 +16,8 @@ function drawGrid(dimension) {
         divs[i].id = i;
         slate.appendChild(divs[i]);
     }
+    let pixels = document.querySelectorAll('div.pixel');
+    pixels.forEach((pixel) => pixel.addEventListener('mouseenter',() => colorNew(pixel)));
 }
 
 function colorNew(pixel) {

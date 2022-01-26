@@ -1,7 +1,26 @@
+body {
+    background-color: #b6bac7;
+}
 #slate {
-    border: 20px solid skyblue;
+    border: 30px solid #0041fa;
+    border-bottom: 50px solid #0041fa;
     border-radius: 10px;
     width: 640px;
     height: 640px;
     display: grid;
+    background-color: white;
+}
+
+#clear {
+    border-radius: 5px;
+    background-color: #d01f10;
+    width: 80px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #1a2023;
+    z-index: 2;
+    transform: translateY(-44px);
+    margin-left: 590px;
 }
