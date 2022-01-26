@@ -1,5 +1,7 @@
 body {
     background-color: #b6bac7;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 #slate {
     border: 30px solid #0041fa;
@@ -16,11 +18,15 @@ body {
     background-color: #d01f10;
     width: 80px;
     height: 40px;
-    font-family: monospace;
-    font-size: 1.7em;
     font-weight: bold;
+    font-size: 1em;
     color: #1a2023;
     z-index: 2;
     transform: translateY(-44px);
     margin-left: 590px;
+}
+a {
+    text-decoration: none;
+    color: #1a2023;
+    font-size: 1.4em;
 }
