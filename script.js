@@ -1,9 +1,8 @@
 const INITIAL_DIMENSION = 16;
 const slate = document.querySelector('#slate');
-// const clearBtn = document.querySelector('#clear');
+const clearBtn = document.querySelector('#clear');
 drawGrid(INITIAL_DIMENSION);
-
-// clearBtn.addEventListener('click', clearGrid);
+clearBtn.addEventListener('click', clearGrid);
 
 
 function drawGrid(dimension) {
@@ -34,4 +33,13 @@ function colorNew(pixel) {
 function generateRandomColor() {
     const hue = Math.floor(Math.random()*361);
     return `hsl(${hue}, 100%, 50%)`;
+}
+
+function clearGrid() {
+    slate.textContent = '';
+    let newDimensions;
+    do {
+        newDimensions = prompt('Want smaller pixels? (Enter a number between 0 and 100, 16 for current size)');
+    }   while(newDimensions < 0||newDimensions > 100 ||Number.isNaN(newDimensions));
+    drawGrid(newDimensions);
 }
